@@ -63,3 +63,27 @@ body {
   color: #fff;
   cursor: pointer;
 }
+
+
+
+body {
+  min-height: 100vh;
+  background: url('https://i.pinimg.com/736x/c7/c8/33/c7c8336f01a88f997b8505f711ee1516.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(5px);  
+  z-index: -1;
+}
