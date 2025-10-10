@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    <heading>
-        <h1>
-            <pre>                                 walkinGallery</pre>
-        </h1>
-    </heading>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title> 
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>walkinGallery</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="full-img" id="fullImgBox"> 
-      <img src="images/img1.jpg" id="fullImg"> 
-      <span onclick="closeFullImg()">X</span> 
-      </div>
-    <div class="img-gallery">
-        <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
-        <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
-        <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-        <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
-    </div>
+  <header>
+    <h1>walkinGallery</h1>
+  </header>
 
- <script>
-    
+ 
+  <div class="full-img" id="fullImgBox"> 
+    <img src="images/img1.jpg" id="fullImg"> 
+    <span onclick="closeFullImg()">X</span> 
+  </div>
 
-    var fullImgBox = document.getElementById ("fullImgBox");
+  
+  <div class="img-gallery">
+    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
+    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
+    <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
+    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">
+    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
+    <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
+    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
+    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
+     
+  </div>
+
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
     var fullImg = document.getElementById("fullImg");
 
-    function openFullImg(pic){
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
     }
-     function closeFullImg(){
 
-        fullImgBox.style.display = "none";
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
     }
-        
- 
- 
-</script>
-</body> 
-</html> 
+  </script>
+</body>
+</html>
+
