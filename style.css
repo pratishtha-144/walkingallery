@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Brush Script MT';
 }
 
 body {
@@ -10,9 +10,13 @@ body {
 
  h1 {
   text-align: center;
-  margin-top: 40px;
-  font-size: 36px;
-  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 66px;
+  letter-spacing: 2px;
+  color:rgb(158, 71, 86);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-decoration: underline;
+ 
 }
 
 .img-gallery {
@@ -83,7 +87,9 @@ body::before {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5); 
+  background-color: rgba(205, 158, 158, 0.5); 
   backdrop-filter: blur(5px);  
   z-index: -1;
 }
+ 
+
