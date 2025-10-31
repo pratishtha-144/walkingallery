@@ -6,30 +6,63 @@
   <title>WalkinGallery</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header>
-    <h1>walkinGallery</h1>
-  </header>
 
- 
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home / Welcome Section -->
+  <section id="home" class="hero">
+    <h1>Welcome to WalkinGallery</h1>
+    <p>Explore a world of colors and creativity!</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p>This gallery showcases a collection of beautiful images in a clean and interactive layout.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="img-gallery">
+    <img src="https://i.pinimg.com/736x/6c/fa/83/6cfa83f86c822ec1f806c8605b3d5c7c.jpg" onclick="openFullImg(this.src)" alt="Art 1">
+    <img src="https://i.pinimg.com/1200x/07/83/eb/0783eb3adda7790b3b1ff80e66585acc.jpg" onclick="openFullImg(this.src)" alt="Art 2">
+    <img src="https://i.pinimg.com/736x/2d/74/69/2d7469213c53bf01f9c167192ec5c3c6.jpg" onclick="openFullImg(this.src)" alt="Art 3">
+    <img src="https://i.pinimg.com/736x/54/cd/07/54cd070f55e084328a9e2078dba9af19.jpg" onclick="openFullImg(this.src)" alt="Art 4">
+    <img src="https://i.pinimg.com/1200x/93/5c/8d/935c8d99826ce1985b47942fadeca03b.jpg" onclick="openFullImg(this.src)" alt="Art 5">
+    <img src="https://i.pinimg.com/1200x/1e/97/8b/1e978b98f6f981f3337821d5d4b21c50.jpg" onclick="openFullImg(this.src)" alt="Art 6">
+    <img src="https://i.pinimg.com/1200x/8a/23/4d/8a234de72729997e3f9e4611e0417d44.jpg" onclick="openFullImg(this.src)" alt="Art 7">
+    <img src="https://i.pinimg.com/1200x/11/2c/45/112c45ffe2685ae31677563cb30d0af5.jpg" onclick="openFullImg(this.src)" alt="Art 8">
+    <img src="https://i.pinimg.com/736x/64/f8/7b/64f87b4a873b42681d500c985d4af39a.jpg" onclick="openFullImg(this.src)" alt="Art 9">
+    <img src="https://i.pinimg.com/736x/0d/0e/ca/0d0eca2b8b2f3903f1968c8a0c628818.jpg" onclick="openFullImg(this.src)" alt="Art 10">
+    <img src="http://i.pinimg.com/736x/36/9c/5d/369c5d94d935b31fd977bde779a69b70.jpg" onclick="openFullImg(this.src)" alt="Art 11">
+    <img src="https://i.pinimg.com/736x/53/98/d8/5398d81035b5ea299ac1a0fc3d121c71.jpg" onclick="openFullImg(this.src)" alt="Art 12">
+    <img src="https://i.pinimg.com/1200x/57/fd/18/57fd18942032819aae87b5bb2a9c4692.jpg" onclick="openFullImg(this.src)" alt="Art 13">
+    <img src="https://i.pinimg.com/1200x/0a/07/d3/0a07d399cd11c896dcce47a58f769b24.jpg" onclick="openFullImg(this.src)" alt="Art 14">
+    <img src="https://i.pinimg.com/736x/f4/ee/91/f4ee91fd2a831340b9dec6d5540b29b5.jpg" onclick="openFullImg(this.src)" alt="Art 15">
+    <img src="https://i.pinimg.com/736x/d4/52/f6/d452f62abf57aa70ff3356810b3eddde.jpg" onclick="openFullImg(this.src)" alt="Art 16">
+    <img src="https://i.pinimg.com/736x/6d/31/9b/6d319b786b1aa3d3b413469d3413cf01.jpg" onclick="openFullImg(this.src)" alt="Art 17">
+    <img src="https://i.pinimg.com/736x/f7/b2/a5/f7b2a52a007df34672bbbb93278f3785.jpg" onclick="openFullImg(this.src)" alt="Art 18">
+    <img src="https://i.pinimg.com/736x/57/73/80/57738048344c2a04cf30d1a2f6e483ba.jpg" onclick="openFullImg(this.src)" alt="Art 19">
+    <img src="https://i.pinimg.com/1200x/4d/75/97/4d7597580208688dc4a9fdb3535d983d.jpg" onclick="openFullImg(this.src)" alt="Art 20">
+  </section>
+
+  <!-- Lightbox / Fullscreen -->
   <div class="full-img" id="fullImgBox"> 
-    <img src="images/img1.jpg" id="fullImg"> 
+    <img src="" id="fullImg"> 
     <span onclick="closeFullImg()">X</span> 
   </div>
 
-  
-  <div class="img-gallery">
-    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
-    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-    <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
-    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">
-    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-    <img src="https://i.pinimg.com/736x/62/eb/a6/62eba6bf65636ee706ecc0d53af1558b.jpg" onclick="openFullImg(this.src)">
-    <img src="https://i.pinimg.com/736x/18/8c/8d/188c8dc8bdbfd118070eb2dc52bf4241.jpg" onclick="openFullImg(this.src)">    
-    <img src="https://i.pinimg.com/736x/76/43/2d/76432d604e8201cb50731f2c1fc95cfb.jpg" onclick="openFullImg(this.src)">
-     
-  </div>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WalkinGallery. All rights reserved.</p>
+  </footer>
 
   <script>
     var fullImgBox = document.getElementById("fullImgBox");
@@ -44,6 +77,6 @@
       fullImgBox.style.display = "none";
     }
   </script>
+
 </body>
 </html>
-
